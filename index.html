@@ -4,249 +4,45 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One|Tajawal&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <!--    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">-->
+    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
 
 
 </head>
 <body>
+<div class="header-wrapper">
+    <div class="header-top-section">
+        <div class="logo-wapper">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTIwLjIyNyIgaGVpZ2h0PSI0OC4yNDUiIHZpZXdCb3g9IjAgMCAxMjAuMjI3IDQ4LjI0NSI+CiAgPGRlZnM+CiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCI+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzgwNTQiIGRhdGEtbmFtZT0iUGF0aCA4MDU0IiBkPSJNMS4xNzMtNy4yNjgsMTA3Ljc1Ni03LjdsLS43MzMtMjIuNzgxTDIuNTEyLTMwLjI2NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xLjE3MyAzMC40ODEpIiBmaWxsPSIjZmRlZjAwIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz4KICAgIDwvY2xpcFBhdGg+CiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aC0yIj4KICAgICAgPHBhdGggaWQ9IlBhdGhfODA1NiIgZGF0YS1uYW1lPSJQYXRoIDgwNTYiIGQ9Ik0xLjAxNy0xMi4xNThsLjAwNi0uMTQ4LjAwNi4xNTFaTTQyLjYtMjkuNzM5bC0uMDQyLS4wMTMsMS45MDgtLjAwNi4wNDUuMDE2Wk03LjEtNi4wOGwuODE3LjAxOWMtLjIsMC0uNDA4LjAxMy0uNjEuMDEzUzYuOS02LjA1Niw2LjctNi4wNjFabTMxLjYuNmMtMi42NTMuMDUxLTMuMTc0LjA1NC01Ljc5LjAzMkMzNi4zMzQtNS41MTIsMzYuMzM0LTUuNTEyLDM4LjctNS40ODRabTQzLjgtLjI5Mi0yLjctLjFjLS40MzctLjAxOS0uNC0uMDQ1LjM2NC0uMDU2LjU3Ni0uMDA4LDEuMzY0LS4wMDYsMi4wNTQsMCwuMjQzLDAsLjU5My4wMDguNjk0LjAxNC42MzkuMDQzLDEuMjg5LjA4NSwxLjc2Ny4xMjkuMS4wMS0uNDg3LjAyNS0uNzgyLjAzOUM4My4yNTUtNS43NjQsODIuNzUzLTUuNzY3LDgyLjUtNS43NzZabS0zNS4wMTIuMzM0YzMuMjkyLS4wNDksNi45LS4wNTksMTAuNS0uMDY4LjMsMCwuODQzLjAxMi45MzUuMDIycy0uMTcuMDI5LS40NC4wMzJjLTMuMzY4LjAzOS02LjgxMS4wNzEtMTAuNDU3LjA4LS41NSwwLTEuMTI4LS4wMDktMi41NTEtLjAyWm0tNi4xLTI1LjE1MUw0Ni4zNS0zMC42Yy41MjIsMCwxLjEyOC4wMDksMS41NjUuMDE4YTcuNyw3LjcsMCwwLDEtMS40MDYuMDM3bC00LjAzNC4wMTljLTEuNjUxLjAwNi0zLjMxNy4wMTItNS4xNzgtLjAxMWwtMS4yNjItLjEwNmMuNzU5LS4wMTEsMS4yODQtLjAyNCwxLjgyNS0uMDI1bDE1LS4wMTJjLjM3LDAsLjc0OC4wMSwxLjM2NC4wMTktMS4zNDIuMDUtMy4xMTEuMDM0LTQuNjQ2LjAzN0g0NS4wM2MtMS42MDcsMC0zLjI2My0uMDA1LTUuNDQ3LjAxOFpNNzMuNDE1LTUuMjY5Yy0uOTQzLDAtMS40NTMtLjAzNS0uOTA1LS4wNTgsMS40LS4wNTksMy44NzktLjA1OCw1LjA0MiwwLC4yODIuMDE1LjQzNS4wMzIuNjUyLjA0OGw4LjIwNywwLDIuNzMsMGMzLjIyNC0uMDExLDUuMDI4LS4wODMsNC40MjMtLjE3NS0uMDg1LS4wMTMtLjMtLjAyNS0uMzYyLS4wMzhxLS4zMzItLjA2OSwxLjkwOS0uMDkyTDk3Ljc3NS01LjZjMS4zODQtLjAxMiwxLjg4Mi0uMDU0LjkzNS0uMDgybC01LjU5MS0uMTU3LTQuMzcuMDQzLTIuMTQtLjE0YzQuNzI5LS4xMzQsOS42NTktLjIzNCwxNi41MDgtLjIyMSwyLjI3NywwLDQuNDM1LS4wNDQsNS4yMTktLjFhNS4xNDIsNS4xNDIsMCwwLDAtMS4xNTUtLjA0OGwtMS4zNDQsMC0xMy4wMDguMDYyYy0yLjU4My4wMTMtNS4wNzMuMDA1LTcuOTMxLS4wMjEuNS0uMDI0LjcwNy0uMDQ4LDEuMjExLS4wNTZsNC4yNTMtLjA0NSw0LjI4NC0uMDQzYy45MjUtLjAxMSwxLjA3OC0uMDQ1LjQxNy0uMDY2LTEuMjQyLS4wNC0yLjc5Mi0uMDU1LTQuNTIyLS4wMzctMS40MTMuMDE1LTIuNzgyLjAzNS00LjA1OS4wNTgtMi4xMTIuMDM4LTQuMzY2LjA2Ni02LjgyMi4wNjctNS4zODUsMC0xMC4zNzYuMDYzLTE1LjYzNC4wODMtMS40MS4wMDUtMi42MjQuMDE4LTMuMzY3LjA1OC0uODc4LjA0Ny0yLjUyOS4wNjQtNC4xMzkuMDc0bC02Ljc0My4wMzFjLS4yOTIsMC0uNjc5LDAtLjg4NywwLS40MzctLjAwOS0xLjEyMy0uMDIzLTEuMDg1LS4wMzNzLjYyNi0uMDMxLDEuMS0uMDM1Yy42ODktLjAwNywxLjUwNi0uMDA2LDIuMjQyLDAsMi4yOTMuMDA5LDMuNzktLjAxOCw0Ljc0Mi0uMDc3LjI1LS4wMTYuNjU5LS4wMjkuOTczLS4wNDIsNC41NjMtLjAwOCw4LjAyMi0uMDgxLDExLjU1My0uMTQ4LjUzOS0uMDEsMS41ODUtLjAzLjczLS4wNjZMNjYuNC02LjVjLS43ODguMDEzLTEuNTk0LjAzMi0yLjQyOC4wMzMtMy4yNDUuMDA3LTYuMTI3LjA0OC05LjE4NS4wNzJMNTAuOC02LjM2NGMtMS44NjYuMDEyLTMuMzA2LDAtMy45MjgtLjA1OS0uMTI5LS4wMTItLjM5My0uMDI0LS42NzMtLjAzNC0xLjE1My0uMDQyLTIuMjc0LS4wNDgtNC0uMDI3LTIuNTc5LjAzMi00Ljg3LjA3Mi01Ljk4Ni4xNTEtLjY4NS4wNDktMi4wNDIuMDczLTMuNzA2LjA4OS00Ljk4NS4wNDktOS43NDUuMTIxLTE1LjE3Ny4xMjVsLS44ODcuMDA2Yy0yLjA4OS4wMjEtNC4wNjIuMDI0LTYuMTMzLS4wMDktMS43LS4wMjctMy41ODItLjAyMi01LjEuMDE3LS41NDcuMDE1LTEuMTE5LjAyNC0xLjcxOC4wMjlsLTEuMi4wMDdjMC0uMTEsMC0uMjIzLjAwNi0uMzQsMC0uMjc5LjAwNi0uNTY2LjAwOC0uODUyLDAtLjMyNSwwLS42NDksMC0uOTY0LS4wMDctLjYyOC0uMDIzLTEuMjE3LS4wNTYtMS42OTItLjEtMS40NjEtLjExNi0zLjAyOS0uMTEtNC43NjcsMC0uNDQ0LS4wMDYtLjktLjAwOS0xLjMzOS0uMDQ3LTIuOTI1LS4wMzktNS44ODYtLjA0NS04Ljg0MXEwLTIuNDM4LDAtNC44NzlINi43ODRsNS4xNi0uMDE0YzEuMTQ5LS4wMDUsMi40NDgsMCwzLjU3MS4wMTIuNTI3LjAwNSwxLC4wMzEsMS4xMS4wNS4wNjYuMDExLS41MjUuMDMxLS45ODIuMDM4LS43NzMuMDEzLTEuOTY0LjAxMi0yLjQ2OS4wMjktMS45NjMuMDY3LTQuOTU4LjA4MS03LjIzLjEzM0wzLjc3LTI5LjUxM2wtMS4yODgsMGMuMDA1LjMxNC4wMTEuNjMxLjAxNi45NTIuMDIzLDEuMjQxLjAxMiwyLjUtLjAzOCwzLjY2Ni0uMDYyLDEuNDUyLS4wNDEsMi45Ny0uMDIzLDQuNDc2YTIuMzkyLDIuMzkyLDAsMCwwLC4wOTQuOTQ1Yy4xNzIuMDQ2LjI0OS0uODI2LjI1My0yLjgxNSwwLS4yNjgsMC0uNTM4LDAtLjgwNS0uMDE0LTEuOTg5LS4wMjgtMy45NzgtLjA0NC02LjEwNWExLjkxMiwxLjkxMiwwLDAsMS0uMDYzLS4yYy4wMjctLjAwNi4wNzItLjAxMi4xMjItLjAxOC4xMDctLjAxMi4yMDYtLjAyMi4zMjItLjAyOS4zMDktLjAwNy42LS4wMTIuOTExLS4wMTQuNjIyLDAsMS4zMTksMCwyLjM4My4wMiwxLjg0OS4wMywzLjczMS4wMzIsNS43MTYuMDMyLDIuNTc3LDAsNS4yLS4wMDcsNy43MjEsMCwzLjY2Mi4wMTcsNy4yMzYuMDE2LDEwLjg2NiwwbDkuMDItLjAzNSwxMS43ODUtLjAyOCwxNi4zODYsMGg3Ljc1OWwtLjM1Ny0uMDcyYzEuMzg2LS4wMjksMi45MjktLjAzOCw0LjY0My0uMDQybDkuMDEzLS4wMjljNC45NjYtLjAxNSw5LjgzMi0uMDQ3LDE0LjkxOC0uMDQxbDMuODc0LDBxMCw1LjQ2OSwwLDEwLjk1M2MwLDEuNDMyLjAwOCwyLjg2OC0uMDM0LDQuMjYtLjAxLjMxNy0uMDA2LjcwNywwLDEuMDYsMCwuNTUzLjA1Ni45LjEuNjc5YTkuODgxLDkuODgxLDAsMCwwLC4xLTIuMTA4Yy0uMDMxLTEuNTY1LS4wMi0zLC4wMzYtNC40NDIuMDExLS4yOTEuMDIxLS44LjAwOS0uOTc2YTguOSw4LjksMCwwLDEsLjAyMi0xLjU1N2MuMDQ1LS41Ny4wMzQtMS4zMjEuMDIxLTIuMDQxLS4wMTctLjg2Ni0uMDQ1LTEuNzQ4LS4wNDItMi42MDhxMC0xLjY3NC4wMDgtMy4zNDZsLTEzLjUyOC4wMDVINjguMDI3bC01LjkxLDBjLTEuNjU1LDAtMy4yMjgtLjAxNS00Ljg1Mi4wMDktLjYzMi4wMDktMS41LDAtMS44MTMtLjAzMy40MzUtLjAwNy44OTMtLjAyLDEuNC0uMDIybDE1Ljc4NC0uMDYyLDM1LjM0OC0uMDY0aC4yNzJjLjAyNywzLjA0My4wNTQsNi4wOS4wODEsOS4xYTM2LjAwNiwzNi4wMDYsMCwwLDAsLjI0Myw0LjU0NiwxMy4zMDYsMTMuMzA2LDAsMCwxLC4xMTUsMS41NjZjLjAzNS45NTQuMDcsMS45LjExMiwzLjA0OC4wMzQtLjQxMS4wNjEtLjYwNy4wNzEtLjg5Mi4wNDMtMS4xMS4xMDUtMS42ODMuMjExLTEuNDYuMDY0LjEzNC4xMTEtLjI0LjE1OS0uNzUyLjA1NC0uNTg4LjExNi0xLjEuMjA3LTEsLjAxMi41MzguMDIzLDEuMDI2LjAzNCwxLjUzMXEuMDMsMy4yLjA2LDYuNDA5Yy4wMjIsMi4zNjguMDg4LDIuNzQxLjI2MywxLjUwOC4wMTMtLjEzNS4wMzQtLjMzNi4wNjEtLjYxMS0uMDA4LS44NTMtLjAxNy0xLjczMS0uMDI1LTIuNi0uMDE1LTEuMDYyLS4wMy0yLjExNi0uMDQ2LTMuMTc0LDAtNC4xNzMtLjEyLTguMDctLjE4NC0xMi4wOTMtLjAxOC0xLjEzMi0uMDM5LTEuMi0uMTczLS44NTdxLS4wMjEtMS4wODEtLjA0My0yLjE2NC0uMDE2LTEuMzc2LS4wMzMtMi43NjFsLTYuNDUzLjAxNC01LjU1Ny0uMDA4Yy0uNDExLS4wMTctLjg3LS4wMy0xLjA2NC0uMDQ2LS42MjctLjA1MS0xLjk1NS0uMDYyLTMuNjA5LS4wNmwtNC45ODMsMC00Ljk3Ny4wMDVjLTEuNzE2LjAwOC0zLjMuMDA1LTQuOTE2LS4wMTEtMy0uMDMtNS45LS4wMzYtOC40LjA0My0xLjY3Ny0uMDQzLTIuNjM0LS4xMjctNS41NjctLjA3MWwxLjE2Ni4wNTRjLTIuMjQ0LjAzMS00LjQuMDQtNi41ODkuMDA2LTIuMjEyLS4wMzUtNC41LS4wMzgtNy4wMS0uMDM2LTQsMC04LjAyMS0uMDEzLTkuNTI0LS4xNTEtLjA3MS0uMDA2LS40NjgtLjAxLS45NTMtLjAySDM4LjkyNWMtNi45MDYsMC0xMy4zLjA3OS0yMC4wNy4xbC00Ljg5LjAyN2MtMS45MTgsMC0zLjc2MS4wMTYtNS41NzguMDMxbC01LjUyOS4wNDctMi4zMzcuMDEycS4wMjEsMS4wMTYuMDQyLDIuMDEyLjAyNC42NzYuMDQ3LDEuMzQ0Yy4wMzIuODkyLjA2NSwxLjc3OS4xLDIuNjc3YTE2LjE4NiwxNi4xODYsMCwwLDAsLjIxNCwyLjMzMSw4LjQyOSw4LjQyOSwwLDAsMSwuMDY5LjkyN2MuMDIxLjkyMS4wNDMsMS44NzMuMDY1LDIuODMzLjAxMSwxLjA1LjAyMiwyLjEyMS4wMzMsMy4xODdhNi4wNTIsNi4wNTIsMCwwLDEtLjExLDEuNyw1LjE3NSw1LjE3NSwwLDAsMC0uMTQ0LDEuMTIxYy0uMDA5LjA5LS4wMjguMDM2LS4wNjIuMDY0LS4wMTctLjMwOS0uMDQxLS43NTEtLjA2Ny0xLjIyOC0uMDMuMzE4LS4wNi40OS0uMDU5LjY1NywwLDEuNDctLjA0NiwyLjk5MS4wMzQsNC40LjAyNC40MjcuMDM1Ljk5Mi4wNDQsMS41MTQuMDExLjM4Ny4wMjEuNzExLjAzLjk5My4wMTQuMzc2LjAzMi42ODcuMDUyLjk2M0wxLjMxMi01LjJjLjI5My0uMDA4LDEuMTUtLjAwOCwxLjc4LS4wMTIuMTEuMDIuMTUxLjAzOC4xNTIuMDU0cy0uMDMzLjAzLS4yLjA0MmMtLjM3Mi4wMjUtMS4xNTMuMDQ0LTIuNDYzLjA1OS0uMDA5LS4zLS4wMi0uNjc1LS4wMzItMS4xQy41NDItNi43NjUuNTI4LTcuNDU4LjUxNC04LjEyMy41MDgtOS4zNTUuNDctMTAuMzUuNC0xMS4yMjRjLS4wMjYtLjQ0Mi0uMDYxLTEuMDQ0LS4wODktMS41MzYtLjAxNi0uMjQ0LS4wNDEtLjQtLjA2NS0uNjE0LS4wNjIuODQ4LS4wMzYsMS43MTctLjAyMywyLjQxN3EuMDIyLDEuMzE3LjA0NiwyLjY0LjAxOSwxLjcxLjA0LDMuNDI3bDkuODE1LS4wMzVMMTEtNC45M2wxMi42MjQtLjA0N2M0LjA5Mi0uMDExLDguMTMzLS4wMTgsMTEuOS0uMDc0LDEuNTc2LS4wMjMsMy40MjUtLjAzMiw1LjItLjA0NywzLjUxMi4wODMsNy41MzguMDc3LDExLjM1Mi4wNDYsNC4xNy0uMDMzLDguMzcxLS4wMzcsMTIuNTk1LS4wNDhsMTAuNzgtLjA0OGEyMy4xMDYsMjMuMTA2LDAsMCwwLDIuNTc3LS4wNzljLjA3Ni0uMDE3LjE5NS0uMDM0LjI5NC0uMDUybC00LjkxLjAxWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMjA0IDMwLjg4OSkiIGZpbGw9IiNmZGVmMDAiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzYyOTAiIGRhdGEtbmFtZT0iR3JvdXAgNjI5MCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM2OS43NzMgLTI2OC43NTUpIj4KICAgIDx0ZXh0IGlkPSJTUVVBUkVGRUVUIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzOTAgMzExKSIgZmlsbD0iI2M2YzZjNiIgZm9udC1zaXplPSIxNiIgZm9udC1mYW1pbHk9IlBvcHBpbnMtQm9sZCwgUG9wcGlucyIgZm9udC13ZWlnaHQ9IjcwMCI+PHRzcGFuIHg9IjAiIHk9IjAiPlNRVUFSRUZFRVQ8L3RzcGFuPjwvdGV4dD4KICAgIDxnIGlkPSJHcm91cF82Mjg5IiBkYXRhLW5hbWU9Ikdyb3VwIDYyODkiIHRyYW5zZm9ybT0ibWF0cml4KDEsIC0wLjAxNywgMC4wMTcsIDEsIDM3MC4xMDgsIDMwMS41NTYpIj4KICAgICAgPGcgaWQ9Ikdyb3VwXzYyODciIGRhdGEtbmFtZT0iR3JvdXAgNjI4NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wMDIgLTI5LjQ4MSkiIGNsaXAtcGF0aD0idXJsKCNjbGlwLXBhdGgpIj4KICAgICAgICA8cGF0aCBpZD0iUGF0aF84MDUzIiBkYXRhLW5hbWU9IlBhdGggODA1MyIgZD0iTS0zLjM4Mi0yLjYyM0gxMTQuNzgzdi0zMi4yNUgtMy4zODJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMy4zOTIgMzEuMjE3KSIgZmlsbD0iI2ZkZWYwMCIvPgogICAgICA8L2c+CiAgICAgIDxnIGlkPSJHcm91cF82Mjg4IiBkYXRhLW5hbWU9Ikdyb3VwIDYyODgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMjA0IC0zMC44ODkpIiBjbGlwLXBhdGg9InVybCgjY2xpcC1wYXRoLTIpIj4KICAgICAgICA8cGF0aCBpZD0iUGF0aF84MDU1IiBkYXRhLW5hbWU9IlBhdGggODA1NSIgZD0iTS00LjgtMS40MTNIMTE0Ljg3NVYtMzUuODg5SC00LjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4yMDQgMzEuNjUxKSIgZmlsbD0iI2ZkZWYwMCIvPgogICAgICA8L2c+CiAgICA8L2c+CiAgICA8dGV4dCBpZD0iQ09OQ1JFVEUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM4MSAyODgpIiBmaWxsPSIjMTkxOTE5IiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0iUG9wcGlucy1Cb2xkLCBQb3BwaW5zIiBmb250LXdlaWdodD0iNzAwIj48dHNwYW4geD0iMCIgeT0iMCI+Q09OQ1JFVEU8L3RzcGFuPjwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo=">
+        </div>
+        <div class="icons-wrapper">
+            <i class="fa  fa-user-o"></i>
+            <i class="fa fa-search"></i>
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="clearFix"></div>
+    </div>
+    <div class="scened-section-wrapper">
+        <div class="text-wrapper">
+            <p class="discount-text">
+                <span>25%</span>
+                DISCOUNT ON YOUR FIRST PROJECT
+            </p>
 
 
-<div class="subscriber">
-    <input placeholder="email here">
-    <button>X</button>
-</div>
+            <h1>
+                We craft affordable design
+            </h1>
+<p>
 
-<div class="a">
-    <div class="b">
-
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+</p>
+        </div>
+        <div>slider</div>
+        <div class="clearFix"></div>
     </div>
 </div>
-<div class="hasBackground">
-
-</div>
-
-<a href="asdsa.sdf">link1</a>
-<a href="http://google.com">link2</a>
-<a href="">link3</a>
-<a href="">link4</a>
-<div></div>
-<div></div>
-
-<h1>Hi H1 Tag</h1>
-
-<div class="hasBackground">
-
-</div>
-<p class="rtl">
-    انقر بزر الفارة الايمن
-</p>
-<p>
-    <span class="fc">T</span>ext Decoration
-    The text-decoration property is used to set or remove decorations from text.
-
-    The value text-decoration: none; is often used to remove underlines from links:
-
-    Example
-    a {
-    text-decoration: none;
-    }
-    The other text-decoration values are used to decorate text:
-
-    Example
-    h1 {
-    text-decoration: overline;
-    }
-
-    h2 {
-    text-decoration: line-through;
-    }
-
-    h3 {
-    text-decoration: underline;
-    }
-    Note: It is not recommended to underline text that is not a link, as this often confuses the reader.
-
-    Text Transformation
-    The text-transform property is used to specify uppercase and lowercase letters in a text.
-
-    It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
-
-    Example
-    p.uppercase {
-    text-transform: uppercase;
-    }
-
-    p.lowercase {
-    text-transform: lowercase;
-    }
-
-    p.capitalize {
-    text-transform: capitalize;
-    }
-    Text Indentation
-    The text-indent property is used to specify the indentation of the first line of a text:
-
-    Example
-    p {
-    text-indent: 50px;
-    }
-    Letter Spacing
-    The letter-spacing property is used to specify the space between the characters in a text.
-
-    The following example demonstrates how to increase or decrease the space between characters:
-
-    Example
-    h1 {
-    letter-spacing: 3px;
-    }
-
-    h2 {
-    letter-spacing: -3px;
-    }
-    Line Height
-    The line-height property is used to specify the space between lines:
-
-    Example
-    p.small {
-    line-height: 0.8;
-    }
-
-    p.big {
-    line-height: 1.8;
-    }
-    Text Direction
-    The direction property is used to change the text direction of an element:
-
-    Example
-    p {
-    direction: rtl;
-    }
-    Word Spacing
-    The word-spacing property is used to specify the space between the words in a text.
-
-    The following example demonstrates how to increase or decrease the space between words:
-
-    Example
-    h1 {
-    word-spacing: 10px;
-    }
-
-    h2 {
-    word-spacing: -5px;
-    }
-    Text Shadow
-    The text-shadow property adds shadow to text.
-
-    The following example specifies the position of the horizontal shadow (3px), the position of the vertical shadow
-    (2px) and the color of the shadow (red):
-
-    Example
-    h1 {
-    text-shadow: 3px 2px red;
-    }
-    More Examples
-    Disable text wrapping inside an element
-    This example demonstrates how to disable text wrapping inside an element.
-
-    Vertical alignment of an image
-    This example demonstrates how to set the vertical align of an image in a text.
-
-    Tip: Go to our CSS Fonts chapter to learn about how to change fonts, text size and the style of a text.
-
-    Test Yourself with Exercises!
-    All CSS Text Properties
-    Property Description
-    color Sets the color of text
-    direction Specifies the text direction/writing direction
-    letter-spacing Increases or decreases the space between characters in a text
-    line-height Sets the line height
-    text-align Specifies the horizontal alignment of text
-    text-decoration Specifies the decoration added to text
-    text-indent Specifies the indentation of the first line in a text-block
-    text-shadow Specifies the shadow effect added to text
-    text-transform Controls the capitalization of text
-    text-overflow Specifies how overflowed content that is not displayed should be signaled to the user
-    unicode-bidi Used together with the direction property to set or return whether the text should be overridden to
-    support multiple languages in the same document
-    vertical-align Sets the vertical alignment of an element
-    white-space Specifies how white-space inside an element is handled
-    word-spacing Increases or decreases the space between words in a text
-
-    COLOR PICKER
-    colorpicker
-    HOW TO
-    Tabs
-    Dropdowns
-    Accordions
-    Side Navigation
-    Top Navigation
-    Modal Boxes
-    Progress Bars
-    Parallax
-    Login Form
-    HTML Includes
-    Google Maps
-    Range Sliders
-    Tooltips
-    Slideshow
-    Filter List
-    Sort List
-    SHARE
-
-
-    CERTIFICATES
-    HTML
-    CSS
-    JavaScript
-    SQL
-    Python
-    PHP
-    jQuery
-    Bootstrap
-    XML
-
-
-</p>
-
-
-<input name="username" placeholder="please enter your name">
-
-<ul>
-    <li>
-        sdfsdf
-    </li>
-    <li>
-        sdfsdf
-    </li>
-    <li>
-        sdfsdf
-    </li>
-    <li>
-        sdfsdf
-    </li>
-    <li>
-        sdfsdf
-    </li>
-</ul>
-
-<!--<a>-->
-<!--    Lind sfsdf sdfsfdsf sd fds fs fd-->
-
-
-<!--    ke-->
-<!--</a>-->
-<!--<a>-->
-<!--    Lind sfsdf sdfsfdsf sd fds fs fd-->
-
-
-<!--    ke-->
-<!--</a>-->
-<!--<div>-->
-<!---->
-<!--</div>-->
-<!--<div></div>-->
-
 
 </body>
 </html>
