@@ -10,8 +10,42 @@
 
 
 <script>
+    // let age = 21
+    // // name != undefined && name !=null && name != false && name != 0 && name != ""
+    // if (age > 50) {
+    //     window.alert("welcome old man")
+    // } else if (age > 40) {
+    //     window.alert("welcome  man")
+    // } else if (age > 20) {
+    //     window.alert("welcome young  man")
+    // } else {
+    //     window.alert("welcome kid")
+    // }
 
+    // break
+    // window.alert("credit")
+    // break
+    // window.alert("visa")
+    // break
+    // let paymentMethod = "visa"
+    // switch (paymentMethod) {
+    //     case  "credit":
+    //     case "visa":
+    //         window.alert("bank")
+    //     case  "credit":
     //
+    //     case "paypal":
+    //         window.alert("paypal")
+    //         break
+    //     default:
+    //         window.alert("cash")
+    //
+    // }
+
+
+    // do {
+    //     console.log("do while")
+    // } while (false)
 
     // for (let x = 10; x < 12; x++) {
     //     console.log(x)
@@ -19,19 +53,19 @@
 
     // let x = 10;
 
-    let answer = window.prompt("please enter number");
-
-    while (answer != "exit") {
-
-        if (!isNaN(answer)) {
-            console.log((answer * answer));
-        } else {
-            console.log("sorry please enter number");
-        }
-
-        answer = window.prompt("please enter number");
-
-    }
+    // let answer = window.prompt("please enter number");
+    //
+    // while (answer != "exit") {
+    //
+    //     if (!isNaN(answer)) {
+    //         console.log((answer * answer));
+    //     } else {
+    //         console.log("sorry please enter number");
+    //     }
+    //
+    //     answer = window.prompt("please enter number");
+    //
+    // }
 
 
     // // let x = f;
@@ -41,9 +75,107 @@
     // if () {
     // } else {
     //     console.log("sorry please enter number");
-    // }
+    // }d
+
+    // let students = ["ahmed", "wael", "samir", "fady"];
+
+    // for (let x = 0; x < students.length; x++)
+    //     console.log(students[x])
+    // for (let x in students)
+    //     console.log(students[x])
+
+    // students.forEach(item => console.log(item))
 
 
+    //
+    // let numbers = [];
+    //
+    // for (let x = 0; x < 50; x++)
+    //     numbers.push(x);
+
+    // console.log(numbers)
+
+
+    function showDate() {
+        console.log(new Date)
+    }
+
+
+    function calcandShow(n1, n2) {
+        console.log(n1 + n2)
+    }
+
+    function calc(n1, n2) {
+        return (n1 + n2)
+    }
+
+    function getPi() {
+        return 22 / 7
+    }
+
+
+    function sq(n) {
+        return n * n;
+    }
+
+    //
+    // // let x = showDate();
+    // // console.log(x)
+    // // let y = calc(5, 9);
+    // console.log(sq(22))
+
+
+    let nums;
+
+    function showPrompet() {
+        let n1, n2;
+        n1 = window.prompt("number 1 ")
+        n2 = window.prompt("number 2 ")
+        return [parseInt(n1), parseInt(n2)];
+    }
+
+    function doMath(method) {
+
+        switch (method) {
+            case "+":
+                nums = showPrompet();
+                return (nums[0] + nums[1])
+            case "-":
+                nums = showPrompet();
+                return (nums[0] - nums[1])
+                break
+            case "/":
+                nums = showPrompet();
+                return (nums[0] / nums[1])
+                break;
+            default:
+                nums = showPrompet();
+                return (nums[0] * nums[1])
+
+        }
+    }
+
+
+    // let students = [["red", "green"], ["BMW", "FIAT", ["loay"]], ["Ahmed", "fouad", "sameh"]];
+    // let students = [
+    //     {name: "ahmed", age: 10, address: {st: "kornish", city: "cairo", building: {floor: 5}}},
+    //     {name: "ahmed", age: 10, address: {st: "kornish", city: "asute", building: {floor: 5}}},
+    //     {
+    //         name: "ahmed",
+    //         phone: ["0454554", "4564544"],
+    //         age: 10,
+    //         address: {st: "kornish", city: "cairo", building: {floor: 5}}
+    //     },
+    //     {name: "ahmed", age: 10, address: {st: "kornish", city: "cairo", building: {floor: 5}}}
+    //
+    // ];
+
+    console.log(students[2].phone[1])
+    // let person = {name: "ahmed", age: 10, address: {st: "kornish", city: "cairo", building: {floor: 5}}};
+
+    // console.log(person.address.building.floor)
+
+    // console.log(doMath(window.prompt("enter method please")))
 </script>
 </body>
 </html>
