@@ -5,155 +5,283 @@
     <title>Title</title>
 
 
+    <style>
+        h1 {
+            color: green;
+        }
+    </style>
 </head>
 <body>
+<!--<div id="myDiv">-->
+<!--    <a id="cuta">a1</a>-->
+<!--</div>-->
+<!--<div class="div">-->
+<!--</div>-->
+<!--<div class="div">5</div>-->
+<!--<a>a2</a>-->
+<!--<div class="div">58</div>-->
+<!--<input type="text" onkeydown="myFunction(event)" value="Try to copy this text">-->
+<div id="mainDiv">
 
-
+</div>
+<script src="script.js"></script>
 <script>
-    // let age = 21
-    // // name != undefined && name !=null && name != false && name != 0 && name != ""
-    // if (age > 50) {
-    //     window.alert("welcome old man")
-    // } else if (age > 40) {
-    //     window.alert("welcome  man")
-    // } else if (age > 20) {
-    //     window.alert("welcome young  man")
-    // } else {
-    //     window.alert("welcome kid")
+
+    //    function myFunction(p) {
+    //        console.log(p)
+    //    }
+    //
+    //    let img = document.createElement("img");
+    //    img.src = "http://localhost/photo-1483728642387-6c3bdd6c93e5.jpeg";
+    //    img.style.maxWidth = "200px"
+    //    img.style.borderRadius = "20px"
+    //
+    //    img.onmouseover = function (e) {
+    //        img.style.boxShadow = "#00000030 4px 4px 4px"
+    //    }
+    //
+    //    img.onmouseleave = function () {
+    //        img.style.boxShadow = null
+    //    }
+    //
+    //
+    //    let div = document.getElementById("myDiv");
+    //    // div.innerText = "..";
+    //    div.removeChild(document.getElementById("cuta"));
+    //    div.appendChild(img)
+    //    // let allDivs = document.getElementsByClassName("div");
+    //    // let allDivs = document.getElementsByTagName("a");
+    //    let allDivs = document.querySelectorAll("div > a");
+    //    // console.log(allDivs)
+    //    // allDivs.forEach(function (item) {
+    //    //     console.log(item)
+    //    // });
+    //    for (let item of allDivs) {
+    //        (item.style.background = "red");
+    //    }
+    //    // for (let i in allDivs) {
+    //    //     console.log(i)
+    //     if (!isNaN(i))
+    //         allDivs[i].style.background = "red"
+    //     // console.log(allDivs, i)
     // }
+    // allDivs[i].style.background = "red"
+    // div.innerText = "text here";
+    // div.innerText = "<h1 style='background: red'>Hi</h1><p>welcome</p>";
 
-    // break
-    // window.alert("credit")
-    // break
-    // window.alert("visa")
-    // break
-    // let paymentMethod = "visa"
-    // switch (paymentMethod) {
-    //     case  "credit":
-    //     case "visa":
-    //         window.alert("bank")
-    //     case  "credit":
+
+    // let g = 0;
+    // let r = 255;
+    // let rang = 256;
+    // let dir = "up"
+    // setInterval(function () {
     //
-    //     case "paypal":
-    //         window.alert("paypal")
-    //         break
-    //     default:
-    //         window.alert("cash")
+    //     if (rang == 0) {
+    //         dir = "down"
+    //     }
+    //     if (rang == 256) {
     //
-    // }
-
-
-    // do {
-    //     console.log("do while")
-    // } while (false)
-
-    // for (let x = 10; x < 12; x++) {
-    //     console.log(x)
-    // }
-
-    // let x = 10;
-
-    // let answer = window.prompt("please enter number");
-    //
-    // while (answer != "exit") {
-    //
-    //     if (!isNaN(answer)) {
-    //         console.log((answer * answer));
-    //     } else {
-    //         console.log("sorry please enter number");
+    //         dir = "up"
     //     }
     //
-    //     answer = window.prompt("please enter number");
+    //     if (dir == "up") {
+    //         rang--;
+    //         g++
+    //         r--
+    //     } else {
+    //         rang++;
+    //         r++;
+    //         g--
+    //     }
+    //     console.log(rang)
+    //     div.style.background = "rgb(" + r + "," + g + ",0)"
+    // }, 2)
+    // ",0)";
+    // setTimeout(function () {
+    // }, 2000)
+    // let i = 0;
+    // setInterval(function () {
+    //     i++;
+    //     if (i < 60) {
     //
+    //     } else {
+    //         i = 0;
+    //     }
+    //     div.innerText = i;
+    // }, 200);
+
+    // recourse fun
+    // function sub(num) {
+    //     if (num > 0) {
+    //         console.log(num - 1);
+    //         sub(num - 1);
+    //     } else {
+    //         return 0;
+    //     }
+    // }
+
+    // sub(100)
+
+    // callback
+    // --  1 user action
+    // --  1 time based action
+
+    // ----- 1 interval
+    // setInterval(function () {
+    //     console.log("2 sec")
+    // }, 2 * 1000);
+    // // ----- 1 timeout
+    // setTimeout(function () {
+    //     console.log("run")
+    // }, 3 * 1000);
+
+    // --  1 outer action
+
+
+    // // let age = 21
+    // // // name != undefined && name !=null && name != false && name != 0 && name != ""
+    // // if (age > 50) {
+    // //     window.alert("welcome old man")
+    // // } else if (age > 40) {
+    // //     window.alert("welcome  man")
+    // // } else if (age > 20) {
+    // //     window.alert("welcome young  man")
+    // // } else {
+    // //     window.alert("welcome kid")
+    // // }
+    //
+    // // break
+    // // window.alert("credit")
+    // // break
+    // // window.alert("visa")
+    // // break
+    // // let paymentMethod = "visa"
+    // // switch (paymentMethod) {
+    // //     case  "credit":
+    // //     case "visa":
+    // //         window.alert("bank")
+    // //     case  "credit":
+    // //
+    // //     case "paypal":
+    // //         window.alert("paypal")
+    // //         break
+    // //     default:
+    // //         window.alert("cash")
+    // //
+    // // }
+    //
+    //
+    // // do {
+    // //     console.log("do while")
+    // // } while (false)
+    //
+    // // for (let x = 10; x < 12; x++) {
+    // //     console.log(x)
+    // // }
+    //
+    // // let x = 10;
+    //
+    // // let answer = window.prompt("please enter number");
+    // //
+    // // while (answer != "exit") {
+    // //
+    // //     if (!isNaN(answer)) {
+    // //         console.log((answer * answer));
+    // //     } else {
+    // //         console.log("sorry please enter number");
+    // //     }
+    // //
+    // //     answer = window.prompt("please enter number");
+    // //
+    // // }
+    //
+    //
+    // // // let x = f;
+    // //
+    // // // x = x + f;
+    // //
+    // // if () {
+    // // } else {
+    // //     console.log("sorry please enter number");
+    // // }d
+    //
+    // // let students = ["ahmed", "wael", "samir", "fady"];
+    //
+    // // for (let x = 0; x < students.length; x++)
+    // //     console.log(students[x])
+    // // for (let x in students)
+    // //     console.log(students[x])
+    //
+    // // students.forEach(item => console.log(item))
+    //
+    //
+    // //
+    // // let numbers = [];
+    // //
+    // // for (let x = 0; x < 50; x++)
+    // //     numbers.push(x);
+    //
+    // // console.log(numbers)
+    //
+    //
+    // function showDate() {
+    //     console.log(new Date)
+    // }
+    //
+    //
+    // function calcandShow(n1, n2) {
+    //     console.log(n1 + n2)
+    // }
+    //
+    // function calc(n1, n2) {
+    //     return (n1 + n2)
+    // }
+    //
+    // function getPi() {
+    //     return 22 / 7
     // }
 
 
-    // // let x = f;
+    // function sq(n) {
+    //     return n * n;
+    // }
     //
-    // // x = x + f;
+    // //
+    // // // let x = showDate();
+    // // // console.log(x)
+    // // // let y = calc(5, 9);
+    // // console.log(sq(22))
     //
-    // if () {
-    // } else {
-    //     console.log("sorry please enter number");
-    // }d
-
-    // let students = ["ahmed", "wael", "samir", "fady"];
-
-    // for (let x = 0; x < students.length; x++)
-    //     console.log(students[x])
-    // for (let x in students)
-    //     console.log(students[x])
-
-    // students.forEach(item => console.log(item))
-
-
     //
-    // let numbers = [];
+    // let nums;
     //
-    // for (let x = 0; x < 50; x++)
-    //     numbers.push(x);
-
-    // console.log(numbers)
-
-
-    function showDate() {
-        console.log(new Date)
-    }
-
-
-    function calcandShow(n1, n2) {
-        console.log(n1 + n2)
-    }
-
-    function calc(n1, n2) {
-        return (n1 + n2)
-    }
-
-    function getPi() {
-        return 22 / 7
-    }
-
-
-    function sq(n) {
-        return n * n;
-    }
-
+    // function showPrompet() {
+    //     let n1, n2;
+    //     n1 = window.prompt("number 1 ")
+    //     n2 = window.prompt("number 2 ")
+    //     return [parseInt(n1), parseInt(n2)];
+    // }
     //
-    // // let x = showDate();
-    // // console.log(x)
-    // // let y = calc(5, 9);
-    // console.log(sq(22))
-
-
-    let nums;
-
-    function showPrompet() {
-        let n1, n2;
-        n1 = window.prompt("number 1 ")
-        n2 = window.prompt("number 2 ")
-        return [parseInt(n1), parseInt(n2)];
-    }
-
-    function doMath(method) {
-
-        switch (method) {
-            case "+":
-                nums = showPrompet();
-                return (nums[0] + nums[1])
-            case "-":
-                nums = showPrompet();
-                return (nums[0] - nums[1])
-                break
-            case "/":
-                nums = showPrompet();
-                return (nums[0] / nums[1])
-                break;
-            default:
-                nums = showPrompet();
-                return (nums[0] * nums[1])
-
-        }
-    }
+    // function doMath(method) {
+    //
+    //     switch (method) {
+    //         case "+":
+    //             nums = showPrompet();
+    //             return (nums[0] + nums[1])
+    //         case "-":
+    //             nums = showPrompet();
+    //             return (nums[0] - nums[1])
+    //             break
+    //         case "/":
+    //             nums = showPrompet();
+    //             return (nums[0] / nums[1])
+    //             break;
+    //         default:
+    //             nums = showPrompet();
+    //             return (nums[0] * nums[1])
+    //
+    //     }
+    // }
 
 
     // let students = [["red", "green"], ["BMW", "FIAT", ["loay"]], ["Ahmed", "fouad", "sameh"]];
@@ -170,7 +298,7 @@
     //
     // ];
 
-    console.log(students[2].phone[1])
+    // console.log(students[2].phone[1])
     // let person = {name: "ahmed", age: 10, address: {st: "kornish", city: "cairo", building: {floor: 5}}};
 
     // console.log(person.address.building.floor)
